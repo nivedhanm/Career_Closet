@@ -4036,7 +4036,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a:focus {
   color: #555;
   cursor: default;
-  background-color: #500000;
+  background-color: #3c0000;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
 }
@@ -4165,7 +4165,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar {
   position: relative;
-  min-height: 50px;
+  min-height: 75px;
   margin-bottom: 20px;
   border: 1px solid transparent;
 }
@@ -4179,6 +4179,17 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: left;
   }
 }
+@media (min-width: 768px) {
+  .navbar-mascot {
+    float: right;
+  }
+}
+/*.navbar-header {
+  float: left;
+}
+.navbar-mascot {
+  float: right;
+}*/
 .navbar-collapse {
   padding-right: 15px;
   padding-left: 15px;
@@ -4226,6 +4237,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .container > .navbar-header,
 .container-fluid > .navbar-header,
+.container > .navbar-mascot,
+.container-fluid > .navbar-mascot,
 .container > .navbar-collapse,
 .container-fluid > .navbar-collapse {
   margin-right: -15px;
@@ -4234,6 +4247,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (min-width: 768px) {
   .container > .navbar-header,
   .container-fluid > .navbar-header,
+  .container > .navbar-mascot,
+  .container-fluid > .navbar-mascot,
   .container > .navbar-collapse,
   .container-fluid > .navbar-collapse {
     margin-right: 0;
@@ -4283,7 +4298,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   text-decoration: none;
 }
 .navbar-brand > img {
-  height: auto;
+  max-height: 75px;
   width: auto;
 }
 @media (min-width: 768px) {
@@ -4294,7 +4309,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-toggle {
   position: relative;
-  float: right;
+  float: left;
   padding: 9px 10px;
   margin-top: 8px;
   margin-right: 15px;
@@ -4327,12 +4342,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 20px;
+  line-height: 50px;
 }
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
     position: static;
-    float: none;
+    float: left;
     width: auto;
     margin-top: 0;
     background-color: transparent;
@@ -4657,7 +4672,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #fff;
-    background-color: transparent;
+    background-color: #3c0000;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
@@ -6481,6 +6496,8 @@ button.close {
 .navbar:after,
 .navbar-header:before,
 .navbar-header:after,
+.navbar-mascot:before,
+.navbar-mascot:after,
 .navbar-collapse:before,
 .navbar-collapse:after,
 .pager:before,
@@ -6505,6 +6522,7 @@ button.close {
 .nav:after,
 .navbar:after,
 .navbar-header:after,
+.navbar-mascot:after,
 .navbar-collapse:after,
 .pager:after,
 .panel-body:after,

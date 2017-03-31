@@ -12,7 +12,7 @@ body {
 }
 
 body {
-    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    padding-top: 75px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
 .img-portfolio {
@@ -71,8 +71,23 @@ header.carousel .fill {
 
 footer {
     margin: 50px 0;
+    background-color: #500000;
+    color:#FFF;
 }
-
+footer a {
+  color: #FFF;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+  color: #777;
+}
+/*footer .fa {
+  padding-right: 5px;
+}*/
+footer a:hover .fa {
+  color: #777;
+}
 /* Responsive Styles */
 
 @media(max-width:991px) {
