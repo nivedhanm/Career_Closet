@@ -106,3 +106,66 @@ footer a:hover .fa {
         height: 70%;
     }
 }
+#mascot-right{
+  display: none;
+}
+@media(max-width:767px) {
+  #mascot-right{
+    display: block !important;
+    padding-right: 15px;
+    float: right;
+  }
+}
+
+.mascot-callout{
+  margin: 20px 5px 5px 5px;
+}
+
+.bubble
+{
+position: relative;
+max-width: auto;
+height: auto;
+margin: 20px 5px 5px 5px;
+padding: 5px;
+background: #500000;
+color: #FFF;
+text-align: center;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+.bubble:after
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 0 10px 15px;
+border-color: #500000 transparent;
+display: block;
+width: 0;
+z-index: 1;
+margin-left: -11px;
+top: -15px;
+left: 97%;
+}
+
+@media(min-width:1400px) {
+  .bubble:after
+  {
+  left: 98%;
+  }
+}
+@media(max-width:767px) {
+  .bubble:after
+  {
+  left: 95%;
+  }
+}
+@media(max-width:480px) {
+  .bubble:after
+  {
+  left: 93%;
+  }
+}
