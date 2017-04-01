@@ -45,7 +45,7 @@ header.carousel .fill {
 /* 404 Page Styles */
 
 .error-404 {
-    font-size: 100px;
+    font-size: 4em;
 }
 
 /* Pricing Page Styles */
@@ -168,4 +168,27 @@ left: 97%;
   {
   left: 93%;
   }
+}
+
+.invaders{
+  float:left;
+  max-width: auto;
+  max-height: auto;
+}
+
+canvas {
+  display: block;
+  margin: auto;
+  position :relative;
+  max-width: 75%;
+  max-height: 75%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: optimize-contrast
 }
