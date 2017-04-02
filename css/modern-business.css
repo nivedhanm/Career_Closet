@@ -166,7 +166,7 @@ left: 97%;
 @media(max-width:480px) {
   .bubble:after
   {
-  left: 93%;
+  left: 89%;
   }
 }
 
@@ -191,4 +191,27 @@ canvas {
   image-rendering: -moz-crisp-edges;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: optimize-contrast
+}
+
+/*.img-cell{
+  max-height: 80%
+}*/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+/* Zebra striping */
+tr:nth-of-type(odd) {
+  background: #eee0e0;
+}
+th {
+  background: #500000;
+  color: white;
+  font-weight: bold;
+}
+td, th {
+  padding: 6px;
+  border: 1px solid #ccc;
+  text-align: left;
 }
