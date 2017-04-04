@@ -63,7 +63,7 @@ header.carousel .fill {
 
 footer {
     position: absolute;
-    
+
     width:100%;
     margin: 50px 0 0;
     height: auto;
@@ -142,16 +142,20 @@ left: 97%;
 }
 /* error page space invaders game css */
 .invaders{
-  float:left;
   max-width: auto;
   max-height: auto;
+
 }
 canvas {
   display: block;
   margin: auto;
   position :relative;
-  max-width: 75%;
-  max-height: 75%;
+  max-width: 100%;
+  max-height: 100%;
+  background-color: #000;
+  margin: 0;
+  padding:0;
+  line-height: 0;
   top: 0;
   left: 0;
   right: 0;
@@ -161,6 +165,13 @@ canvas {
   image-rendering: -moz-crisp-edges;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: optimize-contrast
+}
+#gameview {
+  position: relative;
+  z-index:1;
+  margin: 0;
+  padding:0;
+  display: block;
 }
 
 /* Responsive Styles */
