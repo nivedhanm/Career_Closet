@@ -6419,6 +6419,7 @@ button.close {
   width: 60%;
   padding-left: 0;
   margin-left: -30%;
+  margin-bottom: -15px;
   text-align: center;
   list-style: none;
 }
@@ -6455,6 +6456,14 @@ button.close {
 .carousel-caption .btn {
   text-shadow: none;
 }
+@media (max-width: 767px) {
+  .carousel-indicators {
+    margin-bottom: 10px;
+  }
+  .carousel-caption{
+    margin-bottom: 40px;
+  }
+}
 @media screen and (min-width: 768px) {
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .glyphicon-chevron-right,
@@ -6476,7 +6485,7 @@ button.close {
   .carousel-caption {
     right: 20%;
     left: 20%;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
   }
   .carousel-indicators {
     bottom: 20px;
