@@ -1077,13 +1077,13 @@ th {
           box-sizing: border-box;
 }
 html {
-  font-size: 10px;
+  font-size: .62em;
 
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-family: Frutiger, "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+  font-size: 1.5em;
   line-height: 1.42857143;
   color: #333;
   background-color: #fff;
@@ -4338,11 +4338,17 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-nav {
   margin: 7.5px -15px;
+  font-weight: 600;
 }
 .navbar-nav > li > a {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   line-height: 5px;
+}
+@media (max-width: 767px) {
+  .navbar-nav {
+    font-weight: 400;
+  }
 }
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
@@ -6008,8 +6014,8 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-family: Frutiger, "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+  font-size: 1.3em;
   font-style: normal;
   font-weight: normal;
   line-height: 1.42857143;
@@ -6127,8 +6133,8 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-family: Frutiger, "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+  font-size: 1.5em;
   font-style: normal;
   font-weight: normal;
   line-height: 1.42857143;
@@ -6168,7 +6174,7 @@ button.close {
 .popover-title {
   padding: 8px 14px;
   margin: 0;
-  font-size: 14px;
+  font-size: 1.5em;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
   border-radius: 5px 5px 0 0;
@@ -6338,7 +6344,7 @@ button.close {
   bottom: 0;
   left: 0;
   width: 15%;
-  font-size: 20px;
+  font-size: 1.8em;
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
@@ -6457,7 +6463,7 @@ button.close {
     width: 30px;
     height: 30px;
     margin-top: -10px;
-    font-size: 30px;
+    font-size: 2.142em;
   }
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .icon-prev {
