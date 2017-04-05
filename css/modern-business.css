@@ -15,7 +15,7 @@ body {
     opacity: 0.8;
 }
 
-/* Home Page Carousel */
+/* Home Page Carousel*/
 
 header.carousel {
     height: 50%;
@@ -188,8 +188,8 @@ canvas {
         margin-bottom: 15px;
     }
 
-    header.carousel .carousel {
-        height: 70%;
+    header.carousel{
+        height: auto;
     }
 }
 /* Mascot & textbox's  responsive design */
